@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Distributed Raytracing Demo</title>
+	<script src="../js/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div style="margin:0 auto; text-align:center; width:410px; overflow: hidden;">
+		<div style="margin:20px;">
+			<a class="btn btn-primary" id="btnStartRender" >Render 'Em All</a>
+		</div>
+		
+		<div id="MsgDiv" style="margin:20px;">This is client with id: <%= client_id %></div>
+		<div id="BucketsDiv" style="margin:20px;">Buckets: </div>
+
+	</div>
+	
+	<div id="divAutoMode" style="display: none;" auto-mode='<%= auto_mode %>'/>
+	
+	<img id="RTViewport" src="" alt="" height="255" width="255">
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="../js/pnglib.js"></script>
+	<!-- <script src="../js/SceneViewerRT.js"></script> -->
+	<script src="../js/networking.js"></script>
+	
+</body>
+
+</html>
